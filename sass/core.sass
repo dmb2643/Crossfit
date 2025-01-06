@@ -15,6 +15,9 @@ body
 .container
     @include container
 
+.container-wide
+    @include container-wide
+
 .title-medium
     color: $light
     font-size: clamp(20px,2.08vw,40px)
@@ -25,12 +28,20 @@ body
     line-height: 1.2
 
 
+.section-text
+    text-transform: uppercase
+    font-size: 20px
+    line-height: 1.65
+    color: $light
+    text-align: center
+
+
 .backdrop-title
     position: relative
     z-index: 2
 
 .backdrop-title.centered::after
-    top: 0.55em
+    top: -0.25em
     left: 50%
     translate: -50% 0
 
@@ -43,7 +54,7 @@ body
     width: 26px
     aspect-ratio: 1
     background: url(../icons/Plus.svg) center/contain no-repeat
-
+    
 .backdrop-title::after 
     position: absolute
     z-index: -1
@@ -55,7 +66,8 @@ body
     color: transparent
     -webkit-text-stroke: 1px $light-grey
     text-stroke: 1px $light-grey
-
+    line-height: 1
+    top: 0.3em
 
 .button
     display: inline-flex
