@@ -838,6 +838,33 @@ p:not(:last-child) {
   padding-bottom: 0px;
 }
 
+.footer-main {
+  padding-top: 140px;
+  padding-bottom: 160px;
+}
+
+.footer-extra {
+  padding-block: 15px;
+  background: #131619;
+}
+
+.footer-header {
+  display: grid;
+  grid-template-columns: 20.77% auto;
+  cg: 62px;
+}
+
+.footer-body {
+  display: grid;
+  grid-template-columns: 20.77% repeat(3, 1fr);
+  cg: 62px;
+}
+
+.footer-text {
+  text-align: end;
+  padding-top: 10px;
+}
+
 @media (max-width: 1919px) {
   .motivation-card-img {
     margin-block: -20px;
@@ -897,9 +924,6 @@ p:not(:last-child) {
   }
 }
 @media (max-width: 767px) {
-  .input {
-    width: 85%;
-  }
   .banner-info {
     margin-bottom: 10px;
   }
@@ -970,11 +994,16 @@ p:not(:last-child) {
     flex-direction: column;
     row-gap: 30px;
   }
+  .calculate-table-wrapper {
+    width: 360px;
+  }
   .calculate-table-wrapper::before {
     display: none;
   }
-  .calculate-form-button {
-    width: 85%;
+}
+@media (max-width: 520px) {
+  .join-us-form-input {
+    width: 90%;
   }
 }
 
